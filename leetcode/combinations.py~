@@ -1,0 +1,12 @@
+class Solution:
+    def combine_core(self, rest_list, k):
+        return [[1,2], [1,3], [2,3]]
+
+    def combine(self, n, k):
+        rest_list = range(1, n+1)
+        ret = [[]]
+        ret = self.combine_core(rest_list, k)
+        return ret
+
+s = Solution()
+print s.combine(3,2)
